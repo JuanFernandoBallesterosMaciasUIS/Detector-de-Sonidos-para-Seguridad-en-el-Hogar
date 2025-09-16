@@ -13,7 +13,8 @@
 
 *   **Nombre del dataset:** Dataset Personalizado de Sonidos del Hogar.
 *   **Enlace al dataset:** Los datos son una compilación de clips de audio de fuentes públicas como Freesound.org, Kaggle (ej: UrbanSound8K, ESC-50) y otras librerías de sonidos. [Enlace a tu repositorio o a un documento con los links de los sonidos usados].
-*   **Cantidad de datos:** El dataset consta de [Número total] clips de audio en formato `.wav`, distribuidos equitativamente en 5 categorías: `vidrio rompiéndose`, `golpe de puerta`, `agua corriendo`, `alarma de humo` y `aplausos`. Cada categoría contiene aproximadamente [Número] muestras.
+*   **Cantidad de datos:** El dataset consta de [Número total] clips de audio en formato `.wav`, distribuidos equitativamente en 5 categorías: `vidrio rompiéndose`, `golpe de puerta`, `agua corriendo`, `alarma de humo` y `ladridos`. Cada categoría contiene aproximadamente [Número] muestras.
+
 
 ---
 
