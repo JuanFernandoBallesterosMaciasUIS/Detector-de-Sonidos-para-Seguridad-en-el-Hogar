@@ -2,11 +2,9 @@
 # Detector de Sonidos para Seguridad en el Hogar — IA1 (2025-2 C1)
 
 **Curso:** Inteligencia Artificial I - 2025-2 C1  
-**Equipo:** _(reemplazar con el nombre del equipo)_  
-**Integrantes (nombre y código UIS):**  
-- _Apellido, Nombre — Código_  
-- _Apellido, Nombre — Código_  
-- _Apellido, Nombre — Código_
+**Equipo:** Proyect IA  
+**Integrantes:**  
+- Ballesteros Macias Juan Fernando - 2224653
 
 ---
 
@@ -42,6 +40,4 @@ Los eventos de audio combinan transientes (sonidos impulsivos como vidrios rompi
 **Desafíos asociados a los datos** 
 El principal desafío es el tamaño reducido del dataset (30 muestras por categoría), que podría limitar la capacidad de generalización del modelo. Otro reto es la posible variabilidad dentro de cada clase (ej. diferentes tipos de golpes) y la presencia de ruido de fondo en las muestras. La duración variable de los audios también requerirá un preprocesamiento cuidadoso para estandarizar la entrada del modelo.
 
----
 
-## Estructura del repositorio (sugerida)
