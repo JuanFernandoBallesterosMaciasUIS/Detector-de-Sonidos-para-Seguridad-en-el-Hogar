@@ -14,6 +14,32 @@
 **Fuente:** [Pixabay — Sound Effects](https://pixabay.com/es/sound-effects/search/) y [Carpeta en Google Drive](https://drive.google.com/drive/folders/1y7ibtNqqgdMhxik_176RQQprkYSIPpYf?usp=sharing).  
 **Cantidad de datos:**  Se han recopilado 30 muestras de audio por cada una de las 5 categorías (vidrios rompiéndose, alarma de humo, agua corriendo, golpe de puerta, estufa prendiendo), para un total de 150 archivos de audio.
 
+## ⚠️ Configuración Necesaria para Ejecutar el Proyecto
+
+### 📁 **Archivos de Audio Requeridos**
+**IMPORTANTE:** Los archivos de audio NO están incluidos en este repositorio debido a su tamaño. Para ejecutar el análisis, es necesario descargar los audios del Google Drive.
+
+#### 🔄 **Pasos para configurar el dataset:**
+
+1. **Descargar los audios** desde la [Carpeta en Google Drive](https://drive.google.com/drive/folders/1y7ibtNqqgdMhxik_176RQQprkYSIPpYf?usp=sharing)
+
+2. **Crear la estructura de carpetas** en el directorio raíz del proyecto:
+   ```
+   Detector-de-Sonidos-para-Seguridad-en-el-Hogar/
+   ├── audios/
+   │   ├── agua_corriendo/          (30 archivos .wav)
+   │   ├── alarma_humo/             (30 archivos .wav)
+   │   ├── estufa_prendiendose/     (30 archivos .wav)
+   │   ├── golpe_puerta/            (30 archivos .wav)
+   │   └── vidrios_rompiendose/     (30 archivos .wav)
+   ├── 01-exploratory_data_analysis.ipynb
+   └── README.md
+   ```
+
+3. **Verificar la estructura** ejecutando el notebook `01-exploratory_data_analysis.ipynb`
+
+> **Nota:** Sin los archivos de audio, el notebook no podrá ejecutarse correctamente.
+
 ---
 
 ## Preguntas a responder

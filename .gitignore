@@ -1,0 +1,18 @@
+# Archivos de audio (disponibles en Google Drive)
+audios/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno virtual
+venv/
+env/
