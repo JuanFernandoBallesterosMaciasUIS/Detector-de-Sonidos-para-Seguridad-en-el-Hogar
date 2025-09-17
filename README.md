@@ -14,12 +14,6 @@
 **Fuente:** [Pixabay — Sound Effects](https://pixabay.com/es/sound-effects/search/) y [Carpeta en Google Drive](https://drive.google.com/drive/folders/1y7ibtNqqgdMhxik_176RQQprkYSIPpYf?usp=sharing).  
 **Cantidad de datos:**  Se han recopilado 30 muestras de audio por cada una de las 5 categorías (vidrios rompiéndose, alarma de humo, agua corriendo, golpe de puerta, estufa prendiendo), para un total de 150 archivos de audio.
 
-## ⚠️ Configuración Necesaria para Ejecutar el Proyecto
-
-### 📁 **Archivos de Audio Requeridos**
-**IMPORTANTE:** Los archivos de audio NO están incluidos en este repositorio debido a su tamaño. Para ejecutar el análisis, es necesario descargar los audios del Google Drive.
-
-
 
 ## Preguntas a responder
 
@@ -45,6 +39,12 @@ Los eventos de audio combinan transientes (sonidos impulsivos como vidrios rompi
 
 **Desafíos asociados a los datos** 
 El principal desafío es el tamaño reducido del dataset (30 muestras por categoría), que podría limitar la capacidad de generalización del modelo. Otro reto es la posible variabilidad dentro de cada clase (ej. diferentes tipos de golpes) y la presencia de ruido de fondo en las muestras. La duración variable de los audios también requerirá un preprocesamiento cuidadoso para estandarizar la entrada del modelo.
+
+## ⚠️ Configuración Necesaria para Ejecutar el Proyecto
+
+### 📁 **Archivos de Audio Requeridos**
+**IMPORTANTE:** Los archivos de audio NO están incluidos en este repositorio debido a su tamaño. Para ejecutar el análisis, es necesario descargar los audios del Google Drive.
+
 
 
 #### 🔄 **Pasos para configurar el dataset:**
