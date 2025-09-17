@@ -1,46 +1,47 @@
-# Proyecto IA - Detector de Sonidos para Seguridad y Monitoreo del Hogar
 
-## Identificación del proyecto
+# Detector de Sonidos para Seguridad en el Hogar — IA1 (2025-2 C1)
 
-*   **Nombre del curso:** Inteligencia Artificial I - 2025-2 C1
-*   **Nombre del equipo:** [Nombre del Equipo, ej: AudioGuardAI]
-*   **Estudiantes:**
-    *   [Nombre Estudiante 1 - Código UIS]
-    *   [Nombre Estudiante 2 - Código UIS]
-    *   [Nombre Estudiante 3 - Código UIS]
+**Curso:** Inteligencia Artificial I - 2025-2 C1  
+**Equipo:** _(reemplazar con el nombre del equipo)_  
+**Integrantes (nombre y código UIS):**  
+- _Apellido, Nombre — Código_  
+- _Apellido, Nombre — Código_  
+- _Apellido, Nombre — Código_
+
+---
 
 ## Descripción concisa de los datos a usar
-
-*   **Nombre del dataset:** Dataset Personalizado de Sonidos del Hogar.
-*   **Enlace al dataset:** Los datos son una compilación de clips de audio de fuentes públicas como Freesound.org, Kaggle (ej: UrbanSound8K, ESC-50) y otras librerías de sonidos. [Enlace a tu repositorio o a un documento con los links de los sonidos usados].
-*   **Cantidad de datos:** El dataset consta de [Número total] clips de audio en formato `.wav`, distribuidos equitativamente en 5 categorías: `vidrio rompiéndose`, `golpe de puerta`, `agua corriendo`, `alarma de humo` y `ladridos`. Cada categoría contiene aproximadamente [Número] muestras.
-
+**Dataset:** Sonidos de eventos domésticos (Pixabay SFX) — 5 clases × 30 muestras c/u (≈150 clips, 1–10 s).  
+**Fuente:** [Pixabay — Sound Effects](https://pixabay.com/es/sound-effects/search/) y [Carpeta en Google Drive](https://drive.google.com/drive/folders/1y7ibtNqqgdMhxik_176RQQprkYSIPpYf?usp=sharing).  
+**Cantidad de datos:**  Se han recopilado 30 muestras de audio por cada una de las 5 categorías (vidrios rompiéndose, alarma de humo, agua corriendo, golpe de puerta, estufa prendiendo), para un total de 150 archivos de audio.
 
 ---
 
 ## Preguntas a responder
 
-### Antes del EDA (conceptual):
+### Antes del EDA (conceptual)
+**Problema y relevancia** 
+Buscamos desarrollar un sistema de clasificación de sonidos que identifique un rango de eventos acústicos relevantes para la seguridad y el monitoreo del hogar. Este sistema es importante porque puede alertar a los residentes sobre diversas situaciones, como posibles intrusiones, emergencias, descuidos domésticos o el uso no supervisado de electrodomésticos. El objetivo es proporcionar una capa de seguridad, especialmente útil cuando la vivienda está sola o con niños.
 
-#### Problema y relevancia (máx. 100 palabras)
-Los sistemas de seguridad para el hogar suelen ser costosos e invasivos. Este proyecto busca resolver el problema de la detección de eventos relevantes en el hogar utilizando únicamente el sonido ambiental. Un sistema capaz de identificar automáticamente la rotura de un vidrio (posible robo), una alarma de humo (incendio) o el sonido de agua corriendo (posible fuga o desperdicio) puede proporcionar alertas tempranas de emergencias, mejorando la seguridad y la gestión de recursos del hogar. La relevancia radica en crear una solución de bajo costo y fácil despliegue.
+**Objetivo del análisis (EDA)**
+El Análisis Exploratorio de Datos (EDA) nos permitirá comprender las características acústicas fundamentales de cada categoría de sonido. Mediante la visualización y extracción de propiedades, identificaremos patrones distintivos. Esta fase es crucial para determinar qué características son más informativas y, en consecuencia, guiar la selección de las técnicas de preprocesamiento y los modelos de machine learning más adecuados para construir un clasificador robusto.
 
-#### Objetivo del análisis (máx. 75 palabras)
-El objetivo de esta primera fase (EDA) es comprender las características fundamentales de las señales de audio de cada categoría. Buscamos visualizar las formas de onda y los espectrogramas para identificar si existen "huellas" visuales distintivas para cada sonido. Esta exploración inicial es crucial para validar la hipótesis de que las cinco clases de sonidos son suficientemente diferentes como para que un modelo de machine learning pueda aprender a clasificarlas con alta precisión, incluyendo la distinción entre sonidos percusivos y continuos.
+**Métricas o indicadores** 
+Utilizaremos la Precisión (Accuracy) para una visión general del rendimiento. Sin embargo, dado que un falso negativo (no detectar un evento relevante) es crítico, también emplearemos la Sensibilidad (Recall) y la Puntuación F1 (F1-Score) por clase. Estas métricas aseguran que el modelo sea fiable en la identificación específica de cada uno de los eventos monitoreados.
 
-#### Métricas o indicadores (máx. 75 palabras)
-Para evaluar la solución, las métricas clave serán la **Exactitud (Accuracy)** general, y la **Precisión (Precision)** y **Sensibilidad (Recall)** por cada clase. La **matriz de confusión** será un indicador visual fundamental. Estas métricas son útiles porque no solo nos dirán qué tan bien funciona el modelo en general (accuracy), sino también qué tan confiable es al predecir una clase específica (precisión) y su capacidad para no omitir eventos importantes como una alarma (recall).
+**Motivación de la elección**
+Elegimos este proyecto por su gran aplicabilidad en la vida diaria. La seguridad y el monitoreo del hogar son preocupaciones universales. El análisis de audio ofrece una vía innovadora y de bajo costo para proporcionar tranquilidad a las familias de una manera no invasiva.
 
-#### Motivación de la elección (máx. 50 palabras)
-Se eligió este problema por su aplicación práctica y directa en la vida cotidiana. Trabajar con audio representa un desafío más allá de los datos tabulares tradicionales, permitiéndonos aplicar técnicas de procesamiento de señales. El impacto potencial de crear una herramienta de seguridad y monitoreo accesible fue el principal motivador.
+### Después del EDA (basado en datos)
+**Datos utilizados** 
+Se utilizaron archivos de audio en formatos .mp3, descargados de la plataforma Pixabay.com y organizados en una carpeta pública de Google Drive. Los datos son series de tiempo que representan la amplitud del sonido.
 
-### Después de desarrollar el notebook de EDA (basado en datos):
+**Información contenida en los datos** 
+Los eventos de audio combinan transientes (sonidos impulsivos como vidrios rompiéndose, golpe de puerta y la chispa de estufa) y señales sostenidas (como la alarma de humo y el agua corriendo). Características como la energía de la señal (RMS), su periodicidad (ZCR) y descriptores de timbre como los MFCCs serán clave para diferenciarlos. La diversidad de patrones acústicos entre las clases sugiere que un modelo podrá aprender a separarlas eficazmente.
 
-#### Datos utilizados (máx. 50 palabras)
-Se utilizó un dataset de [Número] archivos de audio en formato `.wav` obtenidos de fuentes públicas (Freesound, Kaggle). Los datos son de tipo serie de tiempo, representando la amplitud de la señal de audio a una frecuencia de muestreo de [ej: 22050] Hz, procesados para tener una duración uniforme.
+**Desafíos asociados a los datos** 
+El principal desafío es el tamaño reducido del dataset (30 muestras por categoría), que podría limitar la capacidad de generalización del modelo. Otro reto es la posible variabilidad dentro de cada clase (ej. diferentes tipos de golpes) y la presencia de ruido de fondo en las muestras. La duración variable de los audios también requerirá un preprocesamiento cuidadoso para estandarizar la entrada del modelo.
 
-#### Información contenida en los datos (máx. 100 palabras)
-El análisis visual de los espectrogramas confirma que cada clase posee características distintivas. La `alarma de humo` muestra bandas de frecuencia altas y sostenidas. La `rotura de vidrio` es una explosión de energía en un amplio espectro. Los `golpes` y `aplausos` son percusivos y cortos. A diferencia de estos, el `agua corriendo` se presenta como un ruido de banda ancha, con energía distribuida de manera constante a través de muchas frecuencias, generando un espectrograma 'denso'. Estas "huellas" visuales son la base que permitirá al modelo realizar la clasificación.
+---
 
-#### Desafíos asociados a los datos (máx. 100 palabras)
-El principal desafío es el **ruido de fondo** presente en muchos clips, que podría confundir al modelo. Otro reto es la **variabilidad intracategórica**: existen muchos tipos de sonidos de agua (grifo, ducha, fuga) que deben ser generalizados como una sola clase. La corta duración de algunos eventos y la posible superposición de sonidos en un entorno real son limitaciones a considerar. La calidad y limpieza de los datos serán cruciales para mitigar estos problemas.
+## Estructura del repositorio (sugerida)
