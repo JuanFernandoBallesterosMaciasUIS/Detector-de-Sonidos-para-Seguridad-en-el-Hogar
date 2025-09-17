@@ -4,7 +4,8 @@
 **Curso:** Inteligencia Artificial I - 2025-2 C1  
 **Equipo:** Proyect IA  
 **Integrantes:**  
-- Ballesteros Macias Juan Fernando - 2224653
+- BALLESTEROS MACIAS JUAN FERNANDO - 2224653
+- HERRERA BAQUERO JUAN PABLO       - 2224512
 
 ---
 
