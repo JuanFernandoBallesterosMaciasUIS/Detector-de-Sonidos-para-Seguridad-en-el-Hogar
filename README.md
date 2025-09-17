@@ -19,28 +19,7 @@
 ### 📁 **Archivos de Audio Requeridos**
 **IMPORTANTE:** Los archivos de audio NO están incluidos en este repositorio debido a su tamaño. Para ejecutar el análisis, es necesario descargar los audios del Google Drive.
 
-#### 🔄 **Pasos para configurar el dataset:**
 
-1. **Descargar los audios** desde la [Carpeta en Google Drive](https://drive.google.com/drive/folders/1y7ibtNqqgdMhxik_176RQQprkYSIPpYf?usp=sharing)
-
-2. **Crear la estructura de carpetas** en el directorio raíz del proyecto:
-   ```
-   Detector-de-Sonidos-para-Seguridad-en-el-Hogar/
-   ├── audios/
-   │   ├── agua_corriendo/          (30 archivos .mp3)
-   │   ├── alarma_humo/             (30 archivos .mp3)
-   │   ├── estufa_prendiendose/     (30 archivos .mp3)
-   │   ├── golpe_puerta/            (30 archivos .mp3)
-   │   └── vidrios_rompiendose/     (30 archivos .mp3)
-   ├── 01-exploratory_data_analysis.ipynb
-   └── README.md
-   ```
-
-3. **Verificar la estructura** ejecutando el notebook `01-exploratory_data_analysis.ipynb`
-
-> **Nota:** Sin los archivos de audio, el notebook no podrá ejecutarse correctamente.
-
----
 
 ## Preguntas a responder
 
@@ -68,3 +47,25 @@ Los eventos de audio combinan transientes (sonidos impulsivos como vidrios rompi
 El principal desafío es el tamaño reducido del dataset (30 muestras por categoría), que podría limitar la capacidad de generalización del modelo. Otro reto es la posible variabilidad dentro de cada clase (ej. diferentes tipos de golpes) y la presencia de ruido de fondo en las muestras. La duración variable de los audios también requerirá un preprocesamiento cuidadoso para estandarizar la entrada del modelo.
 
 
+#### 🔄 **Pasos para configurar el dataset:**
+
+1. **Descargar los audios** desde la [Carpeta en Google Drive](https://drive.google.com/drive/folders/1y7ibtNqqgdMhxik_176RQQprkYSIPpYf?usp=sharing)
+
+2. **Crear la estructura de carpetas** en el directorio raíz del proyecto:
+   ```
+   Detector-de-Sonidos-para-Seguridad-en-el-Hogar/
+   ├── audios/
+   │   ├── agua_corriendo/          (30 archivos .mp3)
+   │   ├── alarma_humo/             (30 archivos .mp3)
+   │   ├── estufa_prendiendose/     (30 archivos .mp3)
+   │   ├── golpe_puerta/            (30 archivos .mp3)
+   │   └── vidrios_rompiendose/     (30 archivos .mp3)
+   ├── 01-exploratory_data_analysis.ipynb
+   └── README.md
+   ```
+
+3. **Verificar la estructura** ejecutando el notebook `01-exploratory_data_analysis.ipynb`
+
+> **Nota:** Sin los archivos de audio, el notebook no podrá ejecutarse correctamente.
+
+---
