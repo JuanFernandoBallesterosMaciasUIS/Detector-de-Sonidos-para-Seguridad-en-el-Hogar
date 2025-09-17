@@ -27,11 +27,11 @@
    ```
    Detector-de-Sonidos-para-Seguridad-en-el-Hogar/
    ├── audios/
-   │   ├── agua_corriendo/          (30 archivos .wav)
-   │   ├── alarma_humo/             (30 archivos .wav)
-   │   ├── estufa_prendiendose/     (30 archivos .wav)
-   │   ├── golpe_puerta/            (30 archivos .wav)
-   │   └── vidrios_rompiendose/     (30 archivos .wav)
+   │   ├── agua_corriendo/          (30 archivos .mp3)
+   │   ├── alarma_humo/             (30 archivos .mp3)
+   │   ├── estufa_prendiendose/     (30 archivos .mp3)
+   │   ├── golpe_puerta/            (30 archivos .mp3)
+   │   └── vidrios_rompiendose/     (30 archivos .mp3)
    ├── 01-exploratory_data_analysis.ipynb
    └── README.md
    ```
