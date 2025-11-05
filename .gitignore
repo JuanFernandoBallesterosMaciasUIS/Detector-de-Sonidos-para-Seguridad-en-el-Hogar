@@ -1,6 +1,7 @@
 # Archivos de audio (disponibles en Google Drive)
 audios/
-
+audios_ampliados/
+notebookGuia
 # Archivos temporales de Python
 __pycache__/
 *.py[cod]
