@@ -421,6 +421,3 @@ Para consultas o colaboraciones:
 - Repositorio del Proyecto: [Detector-de-Sonidos-para-Seguridad-en-el-Hogar](https://github.com/JuanFernandoBallesterosMaciasUIS/Detector-de-Sonidos-para-Seguridad-en-el-Hogar)
 
 ---
-
-**Última actualización:** 23 de noviembre de 2025  
-**Estado del Proyecto:** Completado ✓
