@@ -77,11 +77,11 @@ En esta fase se realizó:
 Se entrenaron y evaluaron múltiples modelos de clasificación:
 
 **Modelos Implementados:**
-- Regresión Logística
-- K-Nearest Neighbors (KNN)
+- Gaussian Naive Bayes
 - Árboles de Decisión
 - Random Forest
 - Support Vector Machines (SVM)
+- Redes Neuronales Densas (Deep Learning)
 
 **Resultados Finales:**
 - **Mejor Modelo:** Random Forest
@@ -191,10 +191,10 @@ Según el análisis de importancia de Random Forest:
 | Modelo | Accuracy | Tiempo Entrenamiento |
 |--------|----------|---------------------|
 | Random Forest | **97.5%** | Rápido |
-| SVM (RBF) | 95.0% | Moderado |
-| KNN (k=5) | 92.5% | Muy rápido |
+| Deep Learning (DNN) | 95.0% | Lento |
+| SVM (RBF) | 92.5% | Moderado |
 | Árbol de Decisión | 87.5% | Muy rápido |
-| Regresión Logística | 85.0% | Rápido |
+| Gaussian Naive Bayes | 82.5% | Muy rápido |
 
 ---
 
