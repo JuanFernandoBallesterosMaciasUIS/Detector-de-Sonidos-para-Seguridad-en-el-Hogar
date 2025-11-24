@@ -20,7 +20,6 @@ Este proyecto implementa un sistema completo de **clasificación de sonidos para
 - **Características Extraídas:** 70 features acústicas (MFCCs, espectrales, temporales)
 - **Pipeline Completo:** Desde análisis exploratorio hasta modelos supervisados y no supervisados
 
-![Diagrama de Pipeline del Proyecto](diagrama.png)
 
 ---
 
