@@ -45,7 +45,7 @@ El proyecto se desarrolló en tres fases principales, cada una documentada en un
 
 ### Diagrama de Flujo del Pipeline
 
-![Diagrama de Flujo del Pipeline de ML del Proyecto](diagrama.jpg)
+![Diagrama de Flujo del Pipeline de ML del Proyecto](Diagrama.jpg)
 
 Este diagrama muestra el flujo completo del proyecto, desde la ingesta de datos brutos hasta la obtención de resultados y métricas de evaluación, cubriendo tanto el enfoque de **Aprendizaje Supervisado** como el de **Aprendizaje No Supervisado**.
 
