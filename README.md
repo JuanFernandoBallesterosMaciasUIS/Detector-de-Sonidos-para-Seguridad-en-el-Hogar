@@ -1,6 +1,8 @@
 
 # Detector de Sonidos para Seguridad en el Hogar — IA1 (2025-2 C1)
 
+[![Video de Presentación](https://img.youtube.com/vi/lz50IDQkwPo/0.jpg)](https://www.youtube.com/watch?v=lz50IDQkwPo)
+
 **Curso:** Inteligencia Artificial I - 2025-2 C1  
 **Equipo:** Proyect IA  
 **Integrantes:**  
