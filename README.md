@@ -394,6 +394,7 @@ Este proyecto fue desarrollado como parte del curso Inteligencia Artificial I (2
 - **Juan Pablo Herrera Baquero** (2224512)
 
 ### Agradecimientos
+- **Profesor Santiago Gómez** por su guía y enseñanza en el curso de Inteligencia Artificial I
 - **Pixabay.com** por proporcionar los efectos de sonido de dominio público
 - **Librosa Community** por la excelente librería de procesamiento de audio
 - **Scikit-learn Team** por las herramientas de Machine Learning
